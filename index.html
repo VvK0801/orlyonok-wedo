@@ -2,21 +2,61 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
   <meta name="theme-color" content="#0b1e2d" />
   <title>Орлёнок и WeDo 2.0 — Тайна исчезнувшего мира</title>
   <style>
-    html, body { margin:0; padding:0; height:100%; background:#0b1e2d; overflow:hidden;
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color:#eaf2ff; }
-    #game { position:fixed; inset:0; display:flex; align-items:center; justify-content:center; }
-    canvas { display:block; touch-action:none; }
-    #rotate-hint {
-      position:fixed; inset:0; display:none; align-items:center; justify-content:center;
-      background:#0b1e2d; z-index:999; text-align:center; padding:24px; font-size:18px;
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      background: #0b1e2d;
+      overflow: hidden;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      color: #eaf2ff;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      user-select: none;
     }
-    @media (orientation:portrait) and (max-width:820px) { #rotate-hint { display:flex; } }
+
+    #game {
+      position: fixed;
+      inset: 0;
+      width: 100vw;
+      height: 100vh;
+      height: 100dvh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    #game canvas {
+      display: block;
+      max-width: 100%;
+      max-height: 100%;
+      touch-action: none;
+    }
+
+    #rotate-hint {
+      position: fixed;
+      inset: 0;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      background: #0b1e2d;
+      z-index: 999;
+      text-align: center;
+      padding: 24px;
+      font-size: 18px;
+    }
+
+    @media (orientation:portrait) and (max-width: 820px) {
+      #rotate-hint { display: flex; }
+    }
   </style>
-  <script type="module" crossorigin src="./assets/index-BZJURjYX.js"></script>
+  <script type="module" crossorigin src="./assets/index-B2PjaBKd.js"></script>
 </head>
 <body>
   <div id="game"></div>
